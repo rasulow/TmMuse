@@ -1,0 +1,17 @@
+[
+    {
+        "type" : "Admin"
+    },
+    {
+        "type" : "Superadmin"
+    },
+    {
+        "type" : "Moderator"
+    },
+    {
+        "type" : "User"
+    },
+    {
+        "type" : "Cinema"
+    }
+]

@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn Web Server as Unit Service Systemd - TutLinks.com
+After=network.target
+
+[Service]
+User=tmmuse_server
+Group=www-data
+WorkingDirectory=/home/tmmuse_server/TmMuse_admin/src
+Environment="PATH=/home/tmmuse_server/TmMuse_admin/venv/bin"
+ExecStart=/usr/local/bin/gunicorn --config /home/tmmuse_server/TmMuse_admin/src/gunicorn.py main:app
+
+[Install]
+WantedBy=multi-user.target
